@@ -15,6 +15,10 @@ export default function (eleventyConfig) {
 		return content;
 	});
 	return {
-		dir: { input: 'src' },
+		pathPrefix: "/11ty-test/",
+		dir: {
+			input: 'src',
+			output: "_site"
+		},
 	};
 };
