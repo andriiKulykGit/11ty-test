@@ -13,7 +13,7 @@
 		"build:js": "bun build src/js/main.js --outdir=_site/js --minify",
 		"watch:js": "bun build src/js/main.js --outdir=_site/js --watch",
 		"serve": "eleventy --serve",
-		"build": "bun run build:scss && bun run build:js && eleventy",
+		"build": "bun run build:scss && bun run build:js && bunx @11ty/eleventy",
 		"dev": "npm-run-all --parallel watch:scss watch:js serve"
 	}
 }
