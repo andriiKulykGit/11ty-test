@@ -1,0 +1,9 @@
+.icon {
+	display: block;
+	height: 48px;
+	aspect-ratio: 1;
+	&_test {
+		background: url('../icons/icon1.svg') no-repeat center;
+		background-size: contain;
+	}
+}
