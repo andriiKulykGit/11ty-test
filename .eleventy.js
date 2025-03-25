@@ -27,14 +27,13 @@ export default function (eleventyConfig) {
 
 	eleventyConfig.addTransform("minifyHTML", function (content, outputPath) {
 		if (outputPath && outputPath.endsWith(".html")) {
-			let minified = minify(content, {
+			return minify(content, {
 				removeComments: true,
 				collapseWhitespace: true,
 				removeAttributeQuotes: true,
 				minifyCSS: true,
 				minifyJS: true,
 			});
-			return minified;
 		}
 		return content;
 	});
@@ -44,6 +43,6 @@ export default function (eleventyConfig) {
 			input: 'src',
 			output: "_site"
 		},
-		pathPrefix: ""
+		pathPrefix: "/"
 	};
 };

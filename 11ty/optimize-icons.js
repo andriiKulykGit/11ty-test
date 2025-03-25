@@ -18,7 +18,6 @@ async function optimizeSVGs() {
 			const result = optimize(data, { path: filePath });
 
 			await writeFile(destPath, result.data);
-			console.log(`✅ Optimized: ${file}`);
 		}
 	}
 }
