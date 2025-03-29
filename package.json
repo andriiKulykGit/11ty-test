@@ -20,6 +20,6 @@
 		"clean": "bun run 11ty/clean.js",
 		"eleventy": "eleventy",
 		"build": "bun run build:scss && bun run optimize:icons && bun run build:js && bunx @11ty/eleventy",
-		"dev": "bun run npm-run-all --parallel watch:scss watch:js optimize:icons eleventy serve"
+		"dev": "bun run npm-run-all --parallel watch:scss watch:js optimize:icons serve"
 	}
 }

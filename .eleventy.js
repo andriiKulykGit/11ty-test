@@ -16,7 +16,7 @@ export default function (eleventyConfig) {
 		alt: '',
 		input: "src/img",
 		outputDir: "_site/img",
-		urlPath: "./img/",
+		urlPath: "/img/",
 		htmlOptions: {
 			imgAttributes: {
 				loading: "lazy",
